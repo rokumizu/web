@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>まかせてWebライト | 初めてのホームページ作成</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      background-color: #ffffff;
+      color: #0d3050;
+    }
+
+    header {
+      background-color: #e3f2fd;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #0d3050;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0d3050;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('hero.png') center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .line-btn {
+      margin-top: 20px;
+    }
+
+    .line-btn img {
+      height: 55px;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      color: #0d3050;
+      border-left: 5px solid #90caf9;
+      padding-left: 12px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .feature-box {
+      flex: 1;
+      background: #f5faff;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 280px;
+    }
+
+    .feature-box p {
+      margin: 0;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th, td {
+      border: 1px solid #bbdefb;
+      padding: 10px;
+      text-align: center;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+
+    th {
+      background: #e3f2fd;
+    }
+
+    .faq p {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #e3f2fd;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #0d3050;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      .hero h2 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>まかせてWebライト</h1>
+  <nav>
+    <a href="#plans">プラン・料金</a>
+    <a href="#features">特徴</a>
+    <a href="#faq">よくある質問</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>「初めてのホームページ」<br>サーバー契約不要で始められます</h2>
+  <p>維持費ゼロ・スマホ対応・LINEで相談できる安心サポート</p>
+  <div class="line-btn">
+    <a href="https://lin.ee/your-link" target="_blank">
+      <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="LINEで相談">
+    </a>
+  </div>
+</div>
+
+<section id="features">
+  <h3>🌟 こんな方におすすめ</h3>
+  <div class="features">
+    <div class="feature-box"><p>📱 スマホで見やすいホームページが欲しい方</p></div>
+    <div class="feature-box"><p>💬 SNSにURLを貼りたい方</p></div>
+    <div class="feature-box"><p>💰 とにかくコストを抑えて始めたい方</p></div>
+  </div>
+</section>
+
+<section id="plans">
+  <h3>💰 プラン・料金</h3>
+  <table>
+    <tr><th>内容</th><th>価格</th></tr>
+    <tr><td>ホームページ制作（1ページ）</td><td>5,000円</td></tr>
+    <tr><td>修正（1回まで）</td><td>無料</td></tr>
+    <tr><td>修正（2回目以降）</td><td>+1,000円/回</td></tr>
+    <tr><td>LINE相談</td><td>無料（無制限）</td></tr>
+  </table>
+</section>
+
+<section id="faq">
+  <h3>🙋 よくある質問</h3>
+  <div class="faq">
+    <p><strong>Q. サーバーって契約しなくていいの？</strong><br>
+    → はい、当サービスでは<strong>サーバー契約不要の公開方式</strong>を使うので維持費はゼロです！</p>
+
+    <p><strong>Q. ドメインは必要ですか？</strong><br>
+    → 独自ドメインを使わなくても専用URLで運用できます（ドメイン取得代行も対応可能です）。</p>
+
+    <p><strong>Q. LINEで相談ってどういうこと？</strong><br>
+    → 作成前・作成後のご相談も、すべてLINEでやりとりできます。</p>
+  </div>
+</section>
+
+<section id="contact" class="line-btn" style="text-align:center;">
+  <h3>📩 LINEでお気軽にご相談ください</h3>
+  <a href="https://lin.ee/your-link" target="_blank">
+    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="LINEで相談">
+  </a>
+</section>
+
+<footer>
+  &copy; 2025 まかせてWebライト｜運営：あなたの名前｜LINEでいつでもお気軽にどうぞ
+</footer>
+
+</body>
+</html>
